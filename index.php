@@ -13,7 +13,6 @@ include_once('alex_stepan/Linear.php');
 include_once('alex_stepan/Square.php');
 include_once('alex_stepan/MyLog.php');
 
-
 echo "Please enter 3 parameters divided by space. \n";
 $params = explode(" ", fgets(STDIN));
 
