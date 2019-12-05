@@ -13,6 +13,8 @@ include_once('alex_stepan/Linear.php');
 include_once('alex_stepan/Square.php');
 include_once('alex_stepan/MyLog.php');
 
+MyLog::log("Version ".file_get_contents("./version")."\n");
+
 echo "Please enter 3 parameters divided by space. \n";
 $params = explode(" ", fgets(STDIN));
 
@@ -44,3 +46,12 @@ catch (Alex_Stepan $e){
 }
 
 MyLog::write()."\n";
+
+
+
+
+
+
+
+
+
