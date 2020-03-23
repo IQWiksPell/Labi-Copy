@@ -1,0 +1,30 @@
+{
+    "require-dev": {
+	    "php":">=7.4.0",
+        "phpunit/phpunit": "^9",
+		"rok9ru/trpo-core":"dev-master"
+    },
+	"autoload": {
+        "classmap": [
+        "alex_stepan/"
+        ]
+    },
+	"repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"rok9ru/trpo-core",
+                "version":"dev-master",
+                "source":{
+                    "type":"git",
+                    "url":"https://github.com/rok9ru/trpo-core",
+                    "reference":"master"
+                },
+				"autoload":{
+                    "classmap":["LogAbstract.php"],
+                    "files":["EquationInterface.php", "LogInterface.php"]
+                }
+            }
+        }
+    ]
+}

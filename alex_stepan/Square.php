@@ -18,8 +18,8 @@ class Square extends Linear implements \core\EquationInterface{
 				throw new Alex_Stepan('Negative discriminant.');
 			} elseif ($disc > 0){
 				$this->result= array();
-				$this->result[]=((-$b + sqrt($disc)) / (2 * $a));
-				$this->result[]=((-$b - sqrt($disc)) / (2 * $a));
+				$this->result[]=round(((-$b + sqrt($disc)) / (2 * $a)),2);
+				$this->result[]=round(((-$b - sqrt($disc)) / (2 * $a)),2);
 				return $this->result;
 			} else {
 				$this->result = ((-$b) / (2 * $a));

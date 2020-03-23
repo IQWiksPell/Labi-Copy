@@ -1,17 +1,16 @@
 <?php
-
 namespace alex_stepan;
-
+require_once __DIR__ .'/vendor/autoload.php';
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-include_once('alex_stepan/Alex_Stepan_Exception.php');
+/*include_once('alex_stepan/Alex_Stepan_Exception.php');
 include_once('core/EquationInterface.php');
 include_once('core/LogAbstract.php');
 include_once('core/LogInterface.php');
 include_once('alex_stepan/Linear.php');
 include_once('alex_stepan/Square.php');
-include_once('alex_stepan/MyLog.php');
+include_once('alex_stepan/MyLog.php');*/
 
 MyLog::log("Version ".file_get_contents("./version")."\n");
 
