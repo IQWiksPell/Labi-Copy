@@ -1,9 +1,9 @@
 {
-    "require-dev": {
+    "require": {
 	    "php":">=7.4.0",
         "phpunit/phpunit": "^9",
 		"rok9ru/trpo-core":"dev-master",
-		"IQWiksPell/Project":"dev-master"
+		"iqwikspell/project":"dev-master"
     },
 	"repositories":[
         {
@@ -25,18 +25,18 @@
 		{
             "type":"package",
             "package":{
-                "name":"IQWiksPell/Project",
+                "name":"iqwikspell/project",
                 "version":"dev-master",
                 "source":{
                     "type":"git",
-                    "url":"https://github.com/IQWiksPell/Project",
+                    "url":"https://github.com/iqwikspell/project",
                     "reference":"master"
                 },
 				"autoload": {
 					"classmap": [
 						"alex_stepan/"
 								]
-				},
+				}
             }
         }
     ]
